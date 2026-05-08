@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASIN ISMAIL ESSE | Ganacsade</title>
+    <style>
+        /* Guud ahaan muuqaalka */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { line-height: 1.6; color: #333; background: #fdfdfd; overflow-x: hidden; }
+
+        /* Header Casri ah */
+        header { background: #1a2a6c; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .logo { font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; color: #fff; }
+        .contact-top { font-size: 0.85rem; text-align: right; line-height: 1.4; }
+
+        /* Hero Section (Qaybtii aad jeclayd) */
+        .hero { 
+            height: 90vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; animation: fadeInDown 1s ease; }
+        .hero p { font-size: 1.3rem; margin-bottom: 25px; max-width: 700px; animation: fadeInUp 1.2s ease; }
+        .btn { background: #ff4b2b; color: white; padding: 15px 35px; text-decoration: none; border-radius: 30px; font-weight: bold; transition: 0.3s; box-shadow: 0 5px 20px rgba(255,75,43,0.4); }
+        .btn:hover { background: #ff416c; transform: scale(1.05); }
+
+        /* Services (Kaararka Quruxda badan) */
+        .services { padding: 80px 5%; text-align: center; background: #fff; }
+        .services h2 { margin-bottom: 40px; font-size: 2.5rem; color: #1a2a6c; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; }
+        .card:hover { transform: translateY(-15px); border-color: #ff4b2b; }
+        .card h3 { color: #1a2a6c; margin-bottom: 15px; font-size: 1.5rem; }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px;
+            background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-decoration: none; z-index: 1000; transition: 0.3s;
+        }
+        .whatsapp-float:hover { transform: rotate(360deg) scale(1.1); }
+
+        /* Footer */
+        footer { background: #111; color: white; text-align: center; padding: 50px 20px; }
+        .footer-content h2 { color: #ff4b2b; margin-bottom: 10px; }
+        .footer-content p { opacity: 0.7; font-size: 0.9rem; }
+
+        /* Animations */
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">YASIN ISMAIL ESSE</div>
+        <div class="contact-top">
+            📞 0633974208<br>
+            📧 yaasiinkhaliilismaaciilciise@gmail.com
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Xirfad iyo Kalsooni</h1>
+        <p>Ku soo dhawaada dunida ganacsiga ee <strong>Yasin Ismail Esse</strong>. Waxaan halkan u joognaa inaan ganacsigaaga ka dhigno mid guulaysta.</p>
+        <a href="mailto:yaasiinkhaliilismaaciilciise@gmail.com" class="btn">ILA SOO XIRIIR</a>
+    </section>
+
+    <section class="services">
+        <h2>Maxaan kuu qaban karnaa?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Suuqgeyn Casri ah</h3>
+                <p>Waxaan kaa caawinaynaa in ganacsigaaga la gaarsiiyo dad badan oo xiisaynaya.</p>
+            </div>
+            <div class="card">
+                <h3>Maamulka Ganacsiga</h3>
+                <p>Hagitaan sax ah oo ku aaddan sida loo kobciyo dakhliga iyo macaamiisha.</p>
+            </div>
+            <div class="card">
+                <h3>Xalalka Digital-ka</h3>
+                <p>Kobcinta baraha bulshada iyo in magacaaga la maqlo meel kasta.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>YASIN ISMAIL ESSE</h2>
+            <p>Tel: 0633974208</p>
+            <p>Email: yaasiinkhaliilismaaciilciise@gmail.com</p>
+            <br>
+            <p>&copy; 2024. Xuquuqda oo dhan waa dhowran tahay.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button (Toos ayuu u furayaa lambarkaaga) -->
+    <a href="https://wa.me" class="whatsapp-float" target="_blank">
+        W
+    </a>
+
+</body>
+</html>
